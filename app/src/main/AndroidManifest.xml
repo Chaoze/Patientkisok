@@ -11,6 +11,7 @@
     <application
         android:allowBackup="false"
         android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
         android:label="Patient Kiosk"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar"
@@ -34,8 +35,10 @@
             android:name=".KioskCaptureActivity"
             android:exported="false"
             android:lockTaskMode="if_whitelisted"
-            android:screenOrientation="sensor"
-            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
 
         <activity
             android:name=".MainActivity"
