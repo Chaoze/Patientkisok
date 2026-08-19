@@ -37,7 +37,7 @@
             android:lockTaskMode="if_whitelisted"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
-            android:theme="@style/zxing_CaptureTheme"
+            android:theme="@android:style/Theme.Material.Light.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
 
         <activity
